@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfNote.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfNote"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+
+            <TabItem Header="Задание 1">
+                <DockPanel LastChildFill="True">
+                    <Button Name="buttonCut" DockPanel.Dock="Bottom" Padding="30" Click="cutClick">Cut</Button>
+                    <Button Name="buttonCopy" DockPanel.Dock="Bottom" Padding="30" Click="copyClick">Copy</Button>
+                    <Button Name="buttonPaste" DockPanel.Dock="Bottom" Padding="30" Click="pasteClick">Paste</Button>
+                    <TextBox Name="textBox1" DockPanel.Dock="Top" VerticalScrollBarVisibility="Auto" ></TextBox>
+                </DockPanel>
+            </TabItem>
+            <TabItem Header="Задание 2">
+                <DockPanel>
+                    <Button x:Name="button1" DockPanel.Dock="Bottom" Padding="20" Click="buttonClick1" Content="Вадим"/>
+                    <Button x:Name="button2" DockPanel.Dock="Bottom" Padding="20" Click="buttonClick2" Content="Темирлан"/>
+                    <Button Name="button3" DockPanel.Dock="Bottom" Padding="20" Click="buttonClick3" Content="Алибек"/>
+                    <TextBox Name="textBox2" DockPanel.Dock="Top" VerticalScrollBarVisibility="Auto" ></TextBox>
+                </DockPanel>
+            </TabItem>
+            <TabItem Header="Задание 3">
+                <Canvas Margin="0,21,0,0">
+                    <Button x:Name="button4" MouseMove="MouseMove" Canvas.Left="337" Canvas.Top="279" Content="поймай меня если сможешь!" />
+                </Canvas>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
